@@ -2,7 +2,8 @@
 
 ## Description
 
-This portfolio was made based on the original portfolio:[My portfolio](https://drzazga88.github.io/My_portfolio/). The goal was to recreate the portfolio using Bootstrap. This portfolio was slightly modified and skills section added.
+This portfolio was made based on the original portfolio: [My portfolio](https://drzazga88.github.io/My_portfolio/). The goal was to recreate the portfolio using Bootstrap. This portfolio was slightly modified and skills section added.
+Website is responsive to screen size changes. Media query was used to minimum.
 
 ## Table of content
 
