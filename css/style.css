@@ -6,15 +6,26 @@ body {
 }
 
 /* Customization css */
+:root {
+  --redish: rgb(251, 133, 133);
+  --red: rgb(191, 55, 55);
+  --light: rgb(244, 205, 185);
+}
+
 .navbar {
-  background-color: #fb8585;
+  background-color: var(--redish);
   height: 90px;
 }
 
-.navbar a {
-  color: rgb(191, 55, 55) !important;
+.navbar a,
+.navbar-brand {
+  color: var(--red) !important;
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar a:hover {
+  text-decoration: var(--red) 4px underline overline;
 }
 
 .navbar-nav {
@@ -24,13 +35,13 @@ body {
   justify-content: space-evenly;
   flex-direction: row;
   font-size: 14px;
-  background-color: rgb(244, 205, 185);
+  background-color: var(--light);
   margin-right: -1%;
   margin-left: 66%;
   padding: 0 0 5px 0;
 }
 .navbar-brand {
-  background-color: rgb(244, 205, 185);
+  background-color: var(--light);
   padding: 5px 1% 5px 6%;
   margin: -1%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -73,7 +84,7 @@ body {
   justify-content: flex-end;
   margin-top: 30px;
   margin-bottom: -20px;
-  color: rgb(191, 55, 55);
+  color: var(--red);
   background: rgb(244, 205, 185, 0.7);
   font-weight: 500;
 }
@@ -95,11 +106,11 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: -50px;
-  border-bottom: 4px solid #fb8585;
+  border-bottom: 4px solid var(--redish);
 }
 
 #work {
-  border-bottom: 4px solid #fb8585;
+  border-bottom: 4px solid var(--redish);
 }
 
 #work h2 {
@@ -117,9 +128,10 @@ body {
     flex-direction: column;
   }
 
-  /* .display-2, .lead{
-    font-size: 10px!important;
-  } */
+  .display-2,
+  .lead {
+    font-size: 10px !important;
+  }
 
   .jumbotron {
     height: 200px;
@@ -171,25 +183,31 @@ body {
   background-repeat: no-repeat;
 }
 
+.placeholder {
+  min-height: 170px;
+}
+
 .badge {
   color: white;
   background-color: rgb(251, 133, 133, 0.7);
   margin: 0 2% 5%;
   padding: 1% 3% 1% 3%;
+  border-bottom: 0.25rem solid var(--red);
 }
 
 .badge:hover,
-.icon:hover {
+.icon:hover,
+.navbar-brand:hover {
   transform: scale(1.1);
 }
 
 .flex-grid-item {
-  border: 5px solid #fb8585;
+  border: 5px solid var(--redish);
 }
 
 .skills,
 .contact-section {
-  border-bottom: 4px solid #fb8585;
+  border-bottom: 4px solid var(--redish);
 }
 
 #contact-me,
@@ -207,4 +225,37 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.contact-section .card {
+  border: 0.25rem solid var(--redish);
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: var(--red);
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:active {
+  color: #fff;
 }
