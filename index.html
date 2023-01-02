@@ -19,49 +19,277 @@
       href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
     <title>My portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css">
   </head>
 
   <body>
     <!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fb8585;">
+    <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <a class="navbar-brand" href="#">Kasia</a>
+        <img src="./images/Myself.jpeg" alt="Picture of Kasia the creator of the website">
+         <!--Navbar toggler for smaller screens-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!--Navbar links-->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link js-scroll-trigger" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-me">About me</a>
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" href="#about-me">About me</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" href="#work">Work</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-me" tabindex="-1" aria-disabled="true">Contact me</a>
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#resume" tabindex="-1" aria-disabled="true">Resume</a>
-              </li>
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" href="#contact-me">Contact me</a>
+            </li>
           </ul>
         </div>
       </nav>
 
       <!--hero section-->
-      <div class="jumbotron">
-        <h1 class="display-4">Welcome on my page!</h1>
+      <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+          <section class="col-sm-1 col-md-4 col-lg-12">
+        <h1 class="display-2">Welcome on my portfolio page!</h1>
         <p class="lead">I have no idea what I am doing!</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
+      </section>
+        </div>
+      </header>
+    </div>
 
+  <!--Work section-->
+  <main>
+    <!--About me-->
+    <section class="container-fluid content p-5" id="about-me">
+      <h2 class="sectionHeading">About me</h2>
+      <p>I am an enthusiast of gaining new skills and what you can see below is a result of lots of determination and mistakes.</p>
+    </section>
+    <section class="container-fluid portfolio p-5" id="work">
+      <h2 class="sectionHeading">Work</h2>
+      <!-- Top row -->
+      <div class="row">
+        <!-- column 1 -->
+        <div class="container-work col-xs-12 col-sm-6 col-md-5 col-lg-5 mb-4">
+          <!-- Portfolio item 1 -->
+          <section class="card text-left cardAbout">
+            <a href="https://lucky-ganache-391779.netlify.app/" class="flex-grid-item CV" target="_blank">
+              <div class="imgBorder imgHover card-body nopad" id="image1">
+                <div class="badge workHeadline">
+                  <h5 class="card-title">My CV</h5>
+                  <p class="card-text">Check it out!</p>
+                </div>
+              </div>
+            </a>
+          </ection>
+        </div>
+        <!-- column 2 -->
+        <div class="container-work col-xs-12 col-sm-6 col-md-5 col-lg-5 mb-4">
+          <!-- Portfolio item 2 -->
+          <section class="card text-left cardAbout">
+            <a href="https://drzazga88.github.io/Code-refactor/" class="flex-grid-item refactor" target="_blank">
+              <div class="imgBorder imgHover card-body nopad" id="image2">
+                <div class="badge workHeadline">
+                  <h5 class="card-title">Code Refactor</h5>
+                  <p class="card-text">HTML + CSS</p>
+                </div>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+      <!-- Second row -->
+      <div class="row">
+        <!-- column 1-->
+        <div class="container-work col-xs-12 col-sm-6 col-md-5 col-lg-5 mb-4">
+          <!-- Portfolio item 3 -->
+          <section class="card text-left cardAbout">
+            <a href="https://drzazga88.github.io/prework-study-guide/" class="flex-grid-item prework" target="_blank">
+              <div class="imgBorder imgHover card-body nopad" id="image3">
+                <div class="badge workHeadline">
+                  <h5 class="card-title">Pre-Work Study Guide</h5>
+                  <p class="card-text">HTML</p>
+                </div>
+              </div>
+            </a>
+          </section>
+        </div>
+        <!-- column 2-->
+        <div class="container-work col-xs-12 col-sm-6 col-md-5 col-lg-5 mb-4">
+          <!-- Portfolio item 4 -->
+          <section class="card text-left cardAbout">
+            <a href="https://drzazga88.github.io/My_portfolio/#" class="flex-grid-item NoBootStrap"
+              target="_blank">
+              <div class="imgBorder imgHover card-body nopad" id="image4">
+                <div class="badge workHeadline">
+                  <h5 class="card-title">My portfolio with no bootstrap</h5>
+                  <p class="card-text">HTML + CSS</p>
+                </div>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <!--Skills section-->
+  <section class="skills skills-expand-lg text-center" id="skills">
+    <div class="container mb-4">
+      <h2 class="mb-5">Skills</h2>
+      <!--Row 1-->
+      <div class="row">
+        <div class="icon col-xs-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="skills-item mx-auto mb-5 mb-lg-0">
+            <img
+              class="img-fluid rounded-circle mb-4"
+              src="images/html_badge.webp"
+              alt="HTML icon"
+            />
+          </div>
+        </div>
+        <div class="icon col-xs-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="skills-item mx-auto mb-5 mb-lg-0">
+            <img
+              class="img-fluid rounded-circle mb-4"
+              src="images/css_badge.png"
+              alt="CSS icon"
+            />
+          </div>
+        </div>
+        <div class="icon col-xs-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="skills-item mx-auto mb-5 mb-lg-0">
+            <img
+              class="img-fluid rounded-circle mb-4"
+              src="images/JS_icon_2.png"
+              alt="JavaScript icon"
+            />
+          </div>
+        </div>
+        <div class="icon col-xs-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="skills-item mx-auto mb-5 mb-lg-0">
+            <img
+              class="img-fluid rounded-circle mb-4"
+              src="images/nodejs_icon.png"
+              alt="Node JS icon"
+            />
+          </div>
+        </div>
+       <div class="icon col-xs-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="skills-item mx-auto mb-5 mb-lg-0">
+            <img
+              class="img-fluid rounded-circle mb-4"
+              src="images/react_icon.png"
+              alt="React icon"
+            />
+          </div>
+        </div>
+        <div class="icon col-xs-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="skills-item mx-auto mb-5 mb-lg-0">
+            <img
+              class="img-fluid rounded-circle mb-4"
+              src="images/github_badge.png"
+              alt="GitHub icon"
+            />
+          </div>
+        </div>
+      </div>
+      <!--End row 1-->
+
+      <!--Row 2-->
+      <div class="row">
+       <div class="icon col-xs-6 col-sm-4 col-md-4 col-lg-2">
+        <div class="skills-item mx-auto mb-5 mb-lg-0">
+          <img
+            class="img-fluid rounded-circle mb-4"
+            src="images/netlify-icon.png"
+            alt="Netlify icon"
+          />
+        </div>
+       </div>
+       <div class="icon col-xs-6 col-sm-4 col-md-4 col-lg-2">
+        <div class="skills-item mx-auto mb-5 mb-lg-0">
+          <img
+            class="img-fluid rounded-circle mb-4"
+            src="images/UXlogo.png"
+            alt="UX icon"
+          />
+        </div>
+       </div>
+      </div>
+      <!--End row 2-->
+    </div>
+  </section>
+
+  <!--Contact section-->
+  <section class="contact-section text-center" id="contact-me">
+    <div class="container">
+      <h2 class="mb-5">Contact me</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50">
+                <a href="mailto:drzewiecka.katarzyna88@gmail.com">drzewiecka.katarzyna88@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50">
+                <a href="tel:+447459025272">+44 7459 025 272</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Linkedin</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50">
+                <a href="https://www.linkedin.com/in/kasia-drzewiecka-51664666/" target="_blank">Linkedin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social d-flex justify-content-center">
+        <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+        <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+        <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer section-->
+  <footer class="footer-section text-center">
+    <div class="container">
+      <p>&copy; My Website 2022. All Rights Reserved.</p>
+    </div>
+  </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
